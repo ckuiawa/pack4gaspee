@@ -1,0 +1,43 @@
+.links {
+
+  width: 200px;
+}
+
+.link-list {
+  padding-top: 10px;
+}
+
+.link {
+
+}
+
+.welcome {
+  color: black;
+  margin-left: 100px;
+}
+
+.title {
+  height: 36px;
+  padding: 6px 5px 6px 10px;
+  margin: 5px 20px 5px 10px;
+  border-radius: 6px;
+  color: #FFDE17;
+  background-color: #21409A;
+}
+
+.middle-column {
+  position: fixed;
+  top: 360px;
+  left: 250px;
+}
+
+h3  {
+  color: #FFDE17;
+  font-size: 1.5em;
+}
+
+.scout-characters {
+  margin: 25px 0 0 250px;
+  height: 283px;
+  width: 300px;
+}

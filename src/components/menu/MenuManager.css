@@ -1,0 +1,32 @@
+
+.MenuManager {
+  margin: 5px 0px 30px 5px;
+  alignment: center;
+}
+
+.menu-button {
+  font-size: 80%;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+  width: 94px;
+  height: 35px;
+  margin: 5px 3px 7px 3px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 10px;
+  background-color: #FFDE17;
+  padding: 7px 20px 10px 20px;
+
+}
+
+.content-area {
+  background: #ffffff;
+  width: 75%;
+  -webkit-border-radius: 0 0 19px 19px;
+  -moz-border-radius: 0 0 19px 19px;
+  border-radius: 0 0 19px 19px;
+  min-height: 800px;
+  overflow: scroll;
+}

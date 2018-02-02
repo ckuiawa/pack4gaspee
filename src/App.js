@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MenuManager from './components/menu/MenuManager';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="App-content">
+          <header className="App-header">
+            <h1 className="App-title">Pack 4 Gaspee Plateau</h1>
+            <img src="/images/pack-logo.png" className="packlogo" alt="logo" />
+          </header>
+          <div className="menu-manager">
+            <MenuManager ></MenuManager>
+          </div>
+        </div>
       </div>
     );
   }
