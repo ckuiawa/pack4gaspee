@@ -16,7 +16,7 @@ class MenuManager extends Component {
   constructor() {
     super();
 
-    this.menuNames = ['Home','Our Pack', 'Calendar', 'Gallery', 'Popcorn','Hike Club', 'Contact', 'Links', 'Join'];
+    this.menuNames = ['Home','Our Pack', 'Calendar', 'Gallery', 'Popcorn','Hike Club', 'Contact', 'Join'];
 
     this.state = {
       activeView: this.menuNames[0]
@@ -39,47 +39,35 @@ class MenuManager extends Component {
         return (
           <OurPack></OurPack>
         )
-        break;
       case 'Hike Club':
         return (
           <HikeClub/>
         )
-        break;
       case 'Join':
         return (
           <Join></Join>
         )
-        break;
       case 'Gallery':
         return (
           <Gallery></Gallery>
         )
-        break;
       case 'Contact':
         return (
           <Contact></Contact>
         )
-        break;
-      case 'Links':
-        return (
-          <Links></Links>
-        )
-        break;
       case 'Popcorn':
         return (
           <Popcorn></Popcorn>
         )
-        break;
       case 'Calendar':
         return (
           <Calendar></Calendar>
         )
-        break;
       default:
         return (
           <Home></Home>
         )
-    };
+    }
   }
 
   render() {
@@ -88,7 +76,7 @@ class MenuManager extends Component {
 
     const buttons = this.menuNames.map( (menuName) => {
       return (
-        <button className="menu-button" onClick={this.handleMenuClick}>{menuName}</button>
+        <button className="menu-button" onClick={this.handleMenuClick} key={menuName}>{menuName}</button>
       )
 
 

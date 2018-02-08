@@ -1,0 +1,42 @@
+
+.our-pack {
+}
+
+.den-list {
+  margin: 20px 5px 0 10px;
+  width: 200px;
+  color: #FFDE17;
+  background-color: #21409A;
+}
+
+.den-list ul {
+  list-style-type: none;
+}
+
+.den-list li {
+  width: fit-content;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.forms {
+  position: fixed;
+  right: 200px;
+  top: 400px;
+}
+
+.forms-title {
+  color: #FFDE17;
+  font-size: 1.5em;
+  height: 36px;
+  padding: 6px 5px 6px 10px;
+  margin: 5px 20px 25px 10px;
+  border-radius: 6px;
+  color: #FFDE17;
+  background-color: #21409A;
+
+}
+
+a {
+  text-decoration: underline;
+}

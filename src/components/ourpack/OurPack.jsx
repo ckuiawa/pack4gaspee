@@ -7,7 +7,8 @@ import Bears from './Bears';
 import Webelos from './Webelos';
 import ArrowOfLight from './ArrowOfLight';
 
-
+import './OurPack.css';
+import Leadership from "./Leadership";
 
 class OurPack extends Component {
 
@@ -17,6 +18,10 @@ class OurPack extends Component {
     this.state = {
       view: 'OurPack'
     }
+
+    this.denItemClicked = this.denItemClicked.bind(this);
+    this.renderOurPackPage = this.renderOurPackPage.bind(this);
+
   }
 
   renderDenContent() {
@@ -24,70 +29,93 @@ class OurPack extends Component {
     const { view } = this.state;
 
     switch (view) {
-      case 'OurPack':
-        return (
-          <image src="/public/images/scout_uniforms.jpg"></image>
-        )
-        break;
       case 'Lions':
         return (
-          <Lions></Lions>
+          <Lions/>
         )
-        break;
       case 'Tigers':
         return (
-          <Tigers></Tigers>
+          <Tigers/>
         )
-        break;
       case 'Bears':
         return (
-          <Bears></Bears>
+          <Bears/>
         )
-        break;
       case 'Wolves':
         return (
-          <Wolves></Wolves>
+          <Wolves/>
         )
-        break;
       case 'Webelos':
         return (
-          <Webelos></Webelos>
+          <Webelos/>
         )
-        break;
-      case 'ArrowOfLight':
+      case 'Arrow Of Light':
         return (
-          <ArrowOfLight></ArrowOfLight>
+          <ArrowOfLight/>
         )
-        break;
+      case 'Leadership':
+        return (
+          <Leadership/>
+        )
       default:
-        return (
-          <image src="/public/images/scout_uniforms.jpg"></image>
-        )
-        break;
+        return this.renderOurPackPage()
     }
+  }
+
+  denItemClicked(event) {
+    const source = event.target.textContent;
+    this.setState( {
+      view: source
+    })
+  }
+
+  renderOurPackPage() {
+    return (
+      <div className="our-pack">
+        <h2>Class A Uniform</h2>
+        <img src="/images/scout_uniforms.jpg" alt=""></img>
+        <h2>Advancements</h2>
+        <img src="/images/cubscoutingadvcmt.jpg" alt=""></img>
+      </div>
+    )
   }
 
   render()
   {
     return (
       <div>
-        <span classNae="den-list">
+        <span className="den-list">
           <ul>
-            <li>Lions</li>
-            <li>Tigers</li>
-            <li>Wolves</li>
-            <li>Bears</li>
-            <li>Webelos</li>
-            <li>Arrow Of Light</li>
+            <li onClick={this.denItemClicked}>Lions</li>
+            <li onClick={this.denItemClicked}>Tigers</li>
+            <li onClick={this.denItemClicked}>Wolves</li>
+            <li onClick={this.denItemClicked}>Bears</li>
+            <li onClick={this.denItemClicked}>Webelos</li>
+            <li onClick={this.denItemClicked}>Arrow Of Light</li>
+            <li onClick={this.denItemClicked}>Leadership</li>
           </ul>
         </span>
+        {this.renderDenContent()}
         <span className="forms">
-          <a href="">New Scout Info</a>
-          <a href="">Medical Form</a>
-          <a href="">Media Release</a>
-          <a href="">Uniform Guidelines</a>
-          <a href="">Parent Survey</a>
-          <a href="">Derby Sponsoship</a>
+          <span className="forms-title">Forms</span>
+          <div>
+            <a href="" target="_blank" rel="noopener noreferrer">New Scout Info</a>
+          </div>
+          <div>
+            <a href="" target="_blank" rel="noopener noreferrer">Medical Form</a>
+          </div>
+          <div>
+            <a href="" target="_blank" rel="noopener noreferrer">Media Release</a>
+          </div>
+          <div>
+            <a href="" target="_blank" rel="noopener noreferrer">Uniform Guidelines</a>
+          </div>
+          <div>
+            <a href="" target="_blank" rel="noopener noreferrer">Parent Survey</a>
+          </div>
+          <div>
+            <a href="" target="_blank" rel="noopener noreferrer">Derby Sponsoship</a>
+          </div>
         </span>
         <div className="content">
         </div>

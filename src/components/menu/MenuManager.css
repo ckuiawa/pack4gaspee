@@ -2,6 +2,10 @@
 .MenuManager {
   margin: 5px 0px 30px 5px;
   alignment: center;
+  min-height: 800px;
+
+  overflow: scroll;
+
 }
 
 .menu-button {
@@ -28,5 +32,6 @@
   -moz-border-radius: 0 0 19px 19px;
   border-radius: 0 0 19px 19px;
   min-height: 800px;
+  /*height: 1200px;*/
   overflow: scroll;
 }

@@ -1,4 +1,4 @@
-.links {
+links {
 
   width: 200px;
 }
@@ -11,11 +11,6 @@
 
 }
 
-.welcome {
-  color: black;
-  margin-left: 100px;
-}
-
 .title {
   height: 36px;
   padding: 6px 5px 6px 10px;
@@ -25,15 +20,3 @@
   background-color: #21409A;
 }
 
-.middle-column {
-  position: fixed;
-  top: 360px;
-  left: 250px;
-}
-
-
-.scout-characters {
-  margin: 25px 0 0 250px;
-  height: 283px;
-  width: 300px;
-}
